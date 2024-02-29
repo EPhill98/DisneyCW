@@ -18,6 +18,9 @@ th, td {
 table {
     text-align: center;
 }
+label {
+    display: block; /* Ensure labels are displayed as block elements for vertical alignment */
+}
 
 #basicInfo p, #commonInfo p {
     margin: auto !important;
@@ -37,6 +40,11 @@ table {
 }
 #orderForm img:hover{
     transform: scale(1.5);
+}
+#booking{
+    padding: 25px;
+    border: 5px solid black;
+    margin:200px;
 }
 
 .videoCircle {
