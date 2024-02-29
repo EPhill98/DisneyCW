@@ -3,7 +3,7 @@
 
     <head>
         <title>Disney Land Hong Kong</title>
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" href="css/theme.css">
     </head>
 
     </html>
@@ -16,12 +16,12 @@
             <h1>Disney Land</h1>
         </header>
         <div>
-            <iframe src="html/commonInfo.html" width="100%" height="auto" frameborder="0"></iframe>
+            <iframe src="html/commonInfo.html" width="100%" height="25%" frameborder="0"></iframe>
         </div>
         <div id="basicInfo">
             <h3>Adress</h3>
-            <p>Hong Kong Disneyland Resort,
-                Penny's Bay, Lantau Island,
+            <p>Hong Kong Disneyland Resort,<br>
+                Penny's Bay, Lantau Island,<br>
                 Hong Kong
             </p>
             <h4>Tel</h4>
@@ -35,20 +35,20 @@
                 excitement and Disney Characters.</p>
             <h3>Location</h3>
             <a href="html/order.html">
-                <img src="image/location.jpg" alt="Map photo">
+                <img class="roundPic" class="scaleImg" width="200" height="200" src="image/location.jpg" alt="Map photo">
                 <br>
-                <img src="image/button.jpg" alt="Book button">
+                <img class="orderLinkButton" src="image/button.jpg" alt="Book button">
             </a>
         </div>
         <div>
             <h2>Promo Info</h2>
             <h3>DISNEY PREMIRE ACCESS & 1-DAY TIKCEY COMBO, STARTING FROM HK$798</h3>
-            <video autoplay  loop>
+            <video class="videoCircle" width="200" height="200" autoplay loop>
                 <source src="https://personal.cs.cityu.edu.hk/~cs2204/video/Castle.mp4" type="Video/mp4">
                 <source src="https://personal.cs.cityu.edu.hk/~cs2204/video/Castle.ogg" type=Video/ogg>
             </video>
         </div>
-        <div>
+        <div id="booking">
             <h3>BOOKING</h3>
             <form method="get" action="html/form-script.html">
                 <label for="dateInput">Select a Date:</label>

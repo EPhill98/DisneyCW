@@ -1,0 +1,58 @@
+
+body {
+    background-color: pink;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; 
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+table {
+    text-align: center;
+}
+
+#basicInfo p, #commonInfo p {
+    margin: auto !important;
+    width: 500px !important;
+}
+
+#commonInfo p, #booking form {
+    border: 10px solid;
+    border-radius: 5px;
+}
+
+#commonInfo {
+    text-align: center;
+}
+#orderTable{
+    text-align: center;
+}
+#orderForm img:hover{
+    transform: scale(1.5);
+}
+
+.videoCircle {
+    border-radius: 50%;
+    object-fit: cover;
+}
+.roundPic {
+    border-radius: 50%;
+    object-fit: cover;
+}
+.orderLinkButton {
+    margin-top: 10px !important;
+    margin: auto;
+    border: 5px solid black;
+    border-radius: 5%;
+}
+ul{
+    list-style-type: none;
+}
