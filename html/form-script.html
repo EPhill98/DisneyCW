@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<title>HTML Forms</title>
+	<meta charset="UTF-8">
 </head>
+
 <body>
 	<div>
-		<h3>From received</h3>
-		<p>Data are received as follow from the form page:</p>
-		<p>
-			<script type="text/javascript">
-				document.write(document.URL.split("?")[1]);
-			</script>
+		<h3>Form received</h3>
+		<p>Data received from the form page:</p>
+		<script>
+			document.write(document.URL.split("?")[1]);
+		</script>
 	</div>
-
 </body>
+
 </html>

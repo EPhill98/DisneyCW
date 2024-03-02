@@ -19,21 +19,64 @@ table {
     text-align: center;
 }
 label {
-    display: block; /* Ensure labels are displayed as block elements for vertical alignment */
+    display: block;
+}
+header{
+    background-color: white;
+    border: 5px solid black;
+}
+header img {
+    margin-top: 10px;
+}
+footer{
+    background-color: white;
+    border: 5px black solid;
+    border-radius: 10px;
 }
 
+#basicInfo{
+    width: 700px !important;
+    background-color: plum;
+    border: 5px solid black;
+    padding-bottom: 5px;
+    margin: auto;
+}
 #basicInfo p, #commonInfo p {
     margin: auto !important;
     width: 500px !important;
 }
-
+#commonInfo, iframe{
+    width: 100%; 
+    height: 300px !important;
+    border: none;
+    overflow: hidden;
+}
 #commonInfo p, #booking form {
     border: 10px solid;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
-#commonInfo {
+#commonInfo p{
     text-align: center;
+    margin: 5px;
+    padding: 5px;
+}
+#videos {
+    display: flex;
+    justify-content: center;
+}
+#videos video {
+    margin: 20px;
+}
+#orderList{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border: 10px solid black;
+
+}
+#orderForm {
+    margin-top: 5%;
 }
 #orderTable{
     text-align: center;
@@ -44,10 +87,15 @@ label {
 #booking{
     padding: 25px;
     border: 5px solid black;
-    margin:200px;
+    margin:100px;
+}
+
+#designLst ul {
+    list-style-type: none;
 }
 
 .videoCircle {
+    border: 5px solid black;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -59,8 +107,5 @@ label {
     margin-top: 10px !important;
     margin: auto;
     border: 5px solid black;
-    border-radius: 5%;
-}
-ul{
-    list-style-type: none;
+    border-radius: 10px;
 }
