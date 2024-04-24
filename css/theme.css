@@ -24,7 +24,18 @@ label {
 header{
     background-color: white;
     border: 5px solid black;
+    display: flex;
 }
+.i1{
+    flex: 1;
+}
+.i1:first-child{
+    margin-right: 0;
+}
+.i1:last-child{
+    margin-left: 0;
+}
+
 header img {
     margin-top: 10px;
 }
@@ -34,11 +45,42 @@ footer{
     border-radius: 10px;
 }
 
+#fBox{
+    display: flex;
+    width: 100%;
+    border: 5px black solid;
+}
+#fBox div {
+    flex: 1;
+}
+#vidBooking{
+    display: flex;
+    flex-direction: column;
+    border-left: 5px black solid;
+}
+#videos, #booking{
+    flex: 1 !important;
+}
+
+.fGroup {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    width: 100px;
+    margin-right: 10px; 
+  }
+  
+
+
 #basicInfo{
     width: 700px !important;
     background-color: plum;
-    border: 5px solid black;
     padding-bottom: 5px;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
     margin: auto;
 }
 #basicInfo p, #commonInfo p {

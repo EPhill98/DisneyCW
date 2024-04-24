@@ -1,0 +1,77 @@
+header{
+    background-color: white;
+    border: 5px solid black;
+    display: flex;
+}
+
+#main{
+    display: flex;
+}
+
+#main #orderList{
+    flex: 1;
+} 
+
+#main #orderTable {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+    width: 22%
+    
+}
+
+#orderList {
+    display: flex;
+    justify-content: space-between;
+    background-color: darkgrey;
+    color: black;
+    padding: 10px;
+}
+.menuContent {
+    display: none; 
+    position: absolute;
+    top: 50px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.menuItem {
+    position: relative;
+}
+.menuItem:hover .menuContent {
+    background-color: grey;
+    display: flex; 
+    left: 0;
+}
+.menuContent ~ .formDisplay {
+    display: 1;
+    left: 0;
+}
+
+.menuContent:hover{
+    display: flex;
+}
+
+
+h2 {
+    position: relative;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s ease;
+}
+h2:hover{
+    background-color: gray;
+}
+
+table{
+    margin-left: 20%;
+    background-color: grey;
+    text-align: center;
+}
+th {
+    border: 5px solid white;
+}
+td {
+    border: 5px solid white;
+}

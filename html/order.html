@@ -3,8 +3,9 @@
 
 <head>
     <title>ORDER</title>
-    <link rel="stylesheet" type="text/css" href="../css/theme.css">
+    <link rel="stylesheet" type="text/css" href="../css/order.css">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body id="frontPage">
@@ -14,113 +15,115 @@
         </a>
         <h1>Disney Land</h1>
     </header>
-    <div id="commonInfo">
-        <iframe src="../html/commonInfo.html"></iframe>
-    </div>
-    <div>
+    <div id="main" class="menu">
         <div id="orderList">
-            <div>
-                <h3>Tickets</h3>
-                <ul>
-                    <li>Family(2 Adults, 2 Children): $1000hkd</li>
-                    <li>Freinds(5 Adults): $1500hkd</li>
-                    <li>Concessions(Students, 60+): $500hkd</li>
-                </ul>
+            <div class="menuItem">
+                <h2>Tickets</h2>
+                <div class="menuContent">
+                    <div class="formDisplay">
+                        <label for="familyTicket">
+                            <img src="../image/ticket-2.jpeg" alt="Family">
+                        </label>
+                        <input type="number" id="familyTicket" name="ticketType1" value="0">
+                        <input type="button" value="Add">
+                    </div>
+                    <br>
+                    <div class="formDisplay">
+                        <label for="friendsTicket">
+                            <img src="../image/ticket-3.jpeg" alt="Friends">
+                        </label>
+                        <input type="number" id="friendsTicket" name="ticketType2" value="0">
+                        <input type="button" value="Add">
+                    </div>
+                    <br>
+                    <div class="formDisplay">
+                        <label for="concessionsTicket">
+                            <img src="../image/ticket-1.jpeg" alt="Concessions">
+                        </label>
+                        <input type="number" id="concessionsTicket" name="ticketType3" value="0">
+                        <input type="button" value="Add">
+                    </div>
+                    <br>
+                </div>
             </div>
-            <div>
-                <h3>Dinings</h3>
-                <ul>
-                    <li>Hot Dogs and Fries: $50hkd</li>
-                    <li>Big Gulp(Free refils): $100hkd</li>
-                </ul>
+            <div class="menuItem">
+                <h2>Dinings</h2>
+                <div class="menuContent">
+                    <div class="formDisplay">
+                        <label for="hotDogsTicket">
+                            <img src="../image/dining-1.jpeg" alt="Hot Dogs and Fries">
+                        </label>
+                        <input type="number" id="hotDogsTicket" name="ticketType4" value="0">
+                        <input type="button" value="Add">
+                        <br>
+                        <div class="formDisplay">
+                            <label for="bigGulpTicket">
+                                <img src="../image/dining-2.jpeg" alt="Big Gulp">
+                            </label>
+                            <input type="number" id="bigGulpTicket" name="ticketType5" value="0">
+                            <input type="button" value="Add">
+                        </div>
+                        <br>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h3>Hotels</h3>
-                <ul>
-                    <li>Family(2 Adults, 2 Children): $750hkd per night</li>
-                    <li>Twin Beds(2 Guests): $500hkd per night</li>
-                    <li>Super Suit $5000hkd per night</li>
-                </ul>
+            <div class="menuItem">
+                <h2>Hotels</h2>
+                <div class="menuContent">
+                    <div class="formDisplay">
+                        <label for="FamilyHotel">
+                            <img src="../image/hotel-4.jpeg" alt="Family Hotel">
+                        </label>
+                        <input type="number" id="FamilyHotel" name="ticketType6" value="0">
+                        <input type="button" value="Add">
+                        <br>
+                        <div class="formDisplay">
+                            <label for="TwinBedsHotel">
+                                <img src="../image/hotel-1.jpeg" alt="Twin Bed Room">
+                            </label>
+                            <input type="number" id="TwinBedsHotel" name="ticketType7" value="0">
+                            <input type="button" value="Add">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="formDisplay">
+                        <label for="SuperSuitHotel">
+                            <img src="../image/hotel-3.jpeg" alt="Super Suit Room">
+                        </label>
+                        <input type="number" id="SuperSuitHotel" name="ticketType8" value="0">
+                        <input type="button" value="Add">
+                    </div>
+                    <br>
+                    <div class="formDisplay">
+                        <label for="SuperSuitHotel">
+                            <img src="../image/hotel-4.jpeg" alt="Super Suit Room">
+                        </label>
+                        <input type="number" id="SuperSuitHotel" name="ticketType9" value="0">
+                        <input type="button" value="Add">
+                    </div>
+                </div>
             </div>
         </div>
-        <div id="orderForm">
-            <form>
-                <div id="orderTickets">
-                    <label for="familyTicket">
-                        <img src="../image/ticket-2.jpeg" alt="Family">
-                    </label>
-                    <input type="number" id="familyTicket" name="ticketType1" value="0">
-                    <input type="button" value="Add">
-                    <br>
-                    <label for="friendsTicket">
-                        <img src="../image/ticket-3.jpeg" alt="Friends">
-                    </label>
-                    <input type="number" id="friendsTicket" name="ticketType2" value="0">
-                    <input type="button" value="Add">
-                    <br>
-                    <label for="concessionsTicket">
-                        <img src="../image/ticket-1.jpeg" alt="Concessions">
-                    </label>
-                    <input type="number" id="concessionsTicket" name="ticketType3" value="0">
-                    <input type="button" value="Add">
-                    <br>
-                </div>
-                <div id="orderDinings">
-                    <label for="hotDogsTicket">
-                        <img src="../image/dining-1.jpeg" alt="Hot Dogs and Fries">
-                    </label>
-                    <input type="number" id="hotDogsTicket" name="ticketType4" value="0">
-                    <input type="button" value="Add">
-                    <br>
-                    <label for="bigGulpTicket">
-                        <img src="../image/dining-2.jpeg" alt="Big Gulp">
-                    </label>
-                    <input type="number" id="bigGulpTicket" name="ticketType5" value="0">
-                    <input type="button" value="Add">
-                    <br>
-                </div>
-                <div id="orderHotels">
-                    <label for="FamilyHotel">
-                        <img src="../image/hotel-4.jpeg" alt="Family Hotel">
-                    </label>
-                    <input type="number" id="FamilyHotel" name="ticketType6" value="0">
-                    <input type="button" value="Add">
-                    <br>
-                    <label for="TwinBedsHotel">
-                        <img src="../image/hotel-1.jpeg" alt="Twin Bed Room">
-                    </label>
-                    <input type="number" id="TwinBedsHotel" name="ticketType7" value="0">
-                    <input type="button" value="Add">
-                    <br>
-                    <label for="SuperSuitHotel">
-                        <img src="../image/hotel-3.jpeg" alt="Super Suit Room">
-                    </label>
-                    <input type="number" id="SuperSuitHotel" name="ticketType8" value="0">
-                    <input type="button" value="Add">
-                    <br>
-                </div>
-            </form>
+        <div id="orderTable">
+            <h3>Ordered Items</h3>
+            <h4>2/3/14</h4>
+            <p>Guest Name: Euan</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Description</th>
+                        <th>Qty</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Total</td>
+                        <td>PLACE 0</td>
+                    </tr>
+                </tbody>
+            </table>
+            <a href="../html/form-script.html">Undo</a>
         </div>
-    </div>
-    <div id="orderTable">
-        <h3>Ordered Items</h3>
-        <h4>2/3/14</h4>
-        <p>Guest Name: Euan</p>
-        <table>
-            <thead>
-                <tr>
-                    <th>Description</th>
-                    <th>Qty</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Total</td>
-                    <td>PLACE 0</td>
-                </tr>
-            </tbody>
-        </table>
-        <a href="../html/form-script.html">Undo</a>
     </div>
     <div></div>
     <footer>

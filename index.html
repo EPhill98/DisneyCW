@@ -9,72 +9,91 @@
 
 <body id="frontPage">
     <header>
-        <a href="index.html">
-            <img src="image/logo.png" alt="Banner Image">
-        </a>
-        <h1>Disney Land</h1>
+        <div class="i1">
+            <a href="index.html">
+                <img src="image/logo.png" alt="Banner Image">
+            </a>
+        </div>
+        <div class="i1">
+            <h1>Disney Land</h1>
+        </div>
     </header>
     <div id="commonInfo">
         <iframe src="html/commonInfo.html"></iframe>
     </div>
-    <div id="basicInfo">
-        <h3>Address</h3>
-        <p>Hong Kong Disneyland Resort,<br>
-            Penny's Bay, Lantau Island,<br>
-            Hong Kong
-        </p>
-        <h4>Tel</h4>
-        <p>+852 1-830-830</p>
-        <h3>Business Hours</h3>
-        <p>10:30 AM to 8:30 PM</p>
-        <h3>Brief Introduction</h3>
-        <p>Enter a magical kingdom inspired by fairy-tale dreams and explore
-            7 lands- Adventureland, Grizzly Gulch, Mystic Point, Toy Story Land,
-            Fantasyland, Tomorrowland, and Main Street USA - filled with beauty,
-            excitement, and Disney Characters.</p>
-        <h3>Location</h3>
-        <a href="html/order.html">
-            <img class="roundPic scaleImg" width="200" height="200" src="image/location.jpg" alt="Map photo">
-            <br>
-            <img class="orderLinkButton" src="image/button.jpg" alt="Book button">
-        </a>
-    </div>
-    <div>
-        <h2>Promo Info</h2>
-        <h3>DISNEY PREMIERE ACCESS & 1-DAY TICKET COMBO, STARTING FROM HK$798</h3>
-        <div id="videos">
-            <video class="videoCircle" width="300" height="300" autoplay loop controls muted poster="image/logo.png">
-                Your browser does not support the video.
-                <source src="https://personal.cs.cityu.edu.hk/~cs2204/video/Castle.mp4" type="video/mp4">
-                <source src="https://personal.cs.cityu.edu.hk/~cs2204/video/Castle.ogg" type="video/ogg">
-            </video>
-            <video class="videoCircle" width="300" height="300" autoplay loop controls muted poster="image/logo.png">
-                Your browser does not support the video.
-                <source src="https://personal.cs.cityu.edu.hk/~cs2204/video/Musical_Journey.mp4" type="video/mp4">
-                <source src="https://personal.cs.cityu.edu.hk/~cs2204/video/Musical_Journey.ogg" type="video/ogg">
-            </video>
+    <div id="fBox">
+        <div id="basicInfo">
+            <h3>Address</h3>
+            <p>Hong Kong Disneyland Resort,<br>
+                Penny's Bay, Lantau Island,<br>
+                Hong Kong
+            </p>
+            <h4>Tel</h4>
+            <p>+852 1-830-830</p>
+            <h3>Business Hours</h3>
+            <p>10:30 AM to 8:30 PM</p>
+            <h3>Brief Introduction</h3>
+            <p>Enter a magical kingdom inspired by fairy-tale dreams and explore
+                7 lands- Adventureland, Grizzly Gulch, Mystic Point, Toy Story Land,
+                Fantasyland, Tomorrowland, and Main Street USA - filled with beauty,
+                excitement, and Disney Characters.</p>
+            <h3>Location</h3>
+            <a href="html/order.html">
+                <img class="roundPic scaleImg" width="200" height="200" src="image/location.jpg" alt="Map photo">
+                <br>
+                <img class="orderLinkButton" src="image/button.jpg" alt="Book button">
+            </a>
         </div>
-    </div>
-    <div id="booking">
-        <h3>BOOKING</h3>
-        <form method="get" action="html/form-script.html">
-            <label for="dateInput">Select a Date:</label>
-            <input type="date" id="dateInput" name="dateInput">
-            <br>
-            <label for="timeInput">Select a Time:</label>
-            <select id="timeInput" name="timeInput">
-                <option value="10:00">10:30 AM - 11:30 AM</option>
-                <option value="11:00">11:30 AM - 12:30 PM</option>
-                <option value="12:00">12:30 PM - 1:30 PM</option>
-                <option value="09:00">1:30 PM - 2:30 PM</option>
-                <option value="10:00">2:30 PM - 3:30 PM</option>
-            </select>
-            <br>
-            <label for="noVisitors">No. of Visitors:</label><br>
-            <input type="text" id="noVisitors" name="noVisitors"><br>
-            <input type="reset" value="Reset">
-            <input type="submit" value="Submit">
-        </form>
+        <div>
+            <div id="vidBooking">
+                <h2>Promo Info</h2>
+                <h3>DISNEY PREMIERE ACCESS & 1-DAY TICKET COMBO, STARTING FROM HK$798</h3>
+                <div id="videos">
+                    <video class="videoCircle" width="300" height="300" autoplay loop controls muted
+                        poster="image/logo.png">
+                        Your browser does not support the video.
+                        <source src="https://personal.cs.cityu.edu.hk/~cs2204/video/Castle.mp4" type="video/mp4">
+                        <source src="https://personal.cs.cityu.edu.hk/~cs2204/video/Castle.ogg" type="video/ogg">
+                    </video>
+                    <video class="videoCircle" width="300" height="300" autoplay loop controls muted
+                        poster="image/logo.png">
+                        Your browser does not support the video.
+                        <source src="https://personal.cs.cityu.edu.hk/~cs2204/video/Musical_Journey.mp4"
+                            type="video/mp4">
+                        <source src="https://personal.cs.cityu.edu.hk/~cs2204/video/Musical_Journey.ogg"
+                            type="video/ogg">
+                    </video>
+                </div>
+
+                <div id="booking">
+                    <h3>BOOKING</h3>
+                    <form method="get" action="html/form-script.html">
+                        <div class="fGroup">
+                            <label for="dateInput">Select a Date:</label>
+                            <input type="date" id="dateInput" name="dateInput">
+                        </div>
+                        <br>
+                        <div class="fGroup">
+                            <label for="timeInput">Select a Time:</label>
+                            <select id="timeInput" name="timeInput">
+                                <option value="10:00">10:30 AM - 11:30 AM</option>
+                                <option value="11:00">11:30 AM - 12:30 PM</option>
+                                <option value="12:00">12:30 PM - 1:30 PM</option>
+                                <option value="09:00">1:30 PM - 2:30 PM</option>
+                                <option value="10:00">2:30 PM - 3:30 PM</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="fGroup">
+                            <label for="noVisitors">No. of Visitors:</label><br>
+                            <input type="text" id="noVisitors" name="noVisitors"><br>
+                        </div>
+                        <input type="reset" value="Reset">
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
     <footer>
         <p>
