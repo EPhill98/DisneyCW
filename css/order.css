@@ -22,6 +22,7 @@ header{
 }
 
 #orderList {
+    position: relative;
     display: flex;
     justify-content: space-between;
     background-color: darkgrey;
@@ -38,19 +39,24 @@ header{
 }
 .menuItem {
     position: relative;
+    display: flex;
+
 }
 .menuItem:hover .menuContent {
     background-color: grey;
     display: flex; 
     left: 0;
 }
-.menuContent ~ .formDisplay {
-    display: 1;
+.menuContent  ~.formDisplay {
+    flex: 1;
     left: 0;
 }
 
 .menuContent:hover{
     display: flex;
+}
+.menuContent:hover ~ h2 {
+    background-color: grey;
 }
 
 
