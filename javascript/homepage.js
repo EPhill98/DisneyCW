@@ -33,15 +33,24 @@ function switchVideo() {
     videoPlayer.play();
 }
 
-function nonEmpty(){
+function nonEmpty() {
     var f1 = document.getElementById("dateInput").value.trim();
     var f2 = document.getElementById("timeInput").value.trim();
     var f3 = document.getElementById("noVisitors").value.trim();
     var warning = document.getElementById('warning');
-    if (f1 == '' || f2 == '' || f3 == ''){
+    if (f1 === '' || f2 === '' || f3 === '') {
         warning.style.display = 'block';
         return false;
-    } 
+    } else {
+        warning.style.display = 'none';
+        var reservationResult = reserve(f1, f2, f3);
+        if (reservationResult) {
+            alert("Reservation done. Thank you.");
+        } else {
+            alert("Disneyland has reached the maximum number of visitors for the day");
+        }
+         return false; 
+    }
 }
 
 //Functional calls
