@@ -72,6 +72,10 @@ footer{
     margin-right: 10px; 
   }
   
+  .error-message {
+    display: none;
+    color: red;
+  }
 
 
 #basicInfo{

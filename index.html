@@ -54,11 +54,10 @@
                         Your browser does not support the video.
                         <source src="https://personal.cs.cityu.edu.hk/~cs2204/video/Castle.mp4" type="video/mp4">
                     </video>
-                    <script src="javascript/homepage.js"></script>
                 </div>
                 <div id="booking">
                     <h3>BOOKING</h3>
-                    <form method="get" action="html/form-script.html">
+                    <form name="res" method="get" action="html/form-script.html" onsubmit="return nonEmpty()">
                         <div class="fGroup">
                             <label for="dateInput">Select a Date:</label>
                             <input type="date" id="dateInput" name="dateInput">
@@ -81,6 +80,7 @@
                         </div>
                         <input type="reset" value="Reset">
                         <input type="submit" value="Submit">
+                        <p class="error-message" id="warning">Data not completed, please re-enter</p>
                     </form>
                 </div>
             </div>
@@ -94,5 +94,6 @@
         </p>
     </footer>
 </body>
+<script src="javascript/homepage.js"></script>
 
 </html>

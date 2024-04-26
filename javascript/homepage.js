@@ -37,6 +37,21 @@ function switchVideo() {
     videoPlayer.play();
 }
 
+function nonEmpty(){
+    var f1 = document.getElementById("dateInput").value.trim();
+    var f2 = document.getElementById("timeInput").value.trim();
+    var f3 = document.getElementById("noVisitors").value.trim();
+    var warning = document.getElementById('warning');
+    if (f1 == '' || f2 == '' || f3 == ''){
+        alert("INPUT");
+        warning.style.display = 'block';
+        return false;
+    } else {
+        alert("TRUE");
+        return true;
+    }
+}
+
 //Functional calls
 setInterval(changeMsg, 3000);
 // Wait for the DOM content to be loaded
