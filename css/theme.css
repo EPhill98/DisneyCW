@@ -24,7 +24,6 @@ label {
 header{
     background-color: white;
     border: 5px solid black;
-    display: flex;
 }
 .i1{
     flex: 1;

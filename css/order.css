@@ -17,9 +17,11 @@ header{
     justify-content: center;
     align-items: center;
     border: 5px solid black;
+    border-top: 0px;
     width: 22%
     
 }
+
 
 #orderList {
     position: relative;
@@ -32,14 +34,15 @@ header{
 .menuContent {
     display: none; 
     position: absolute;
-    top: 50px;
+    width: 95%;
+    top: 60px;
     background-color: #f9f9f9;
     padding: 10px;
     border: 1px solid #ccc;
 }
 .menuItem {
-    position: relative;
-    display: flex;
+    width: 100%;
+    display: 1;
 
 }
 .menuItem:hover .menuContent {
@@ -49,14 +52,18 @@ header{
 }
 .menuContent  ~.formDisplay {
     flex: 1;
-    left: 0;
+    position: relative;
+    flex-direction: row;
 }
 
-.menuContent:hover{
-    display: flex;
+.formDisplay {
+    flex: 1;
+    flex-direction: row;
 }
+
 .menuContent:hover ~ h2 {
-    background-color: grey;
+    display: flex;
+    background-color: grey !important;
 }
 
 
@@ -64,7 +71,7 @@ h2 {
     position: relative;
     cursor: pointer;
     border: 1px solid #ccc;
-    transition: background-color 0.3s ease;
+    border-bottom: 0px;
 }
 h2:hover{
     background-color: gray;

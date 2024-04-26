@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
         newRow.appendChild(descriptionCell);
         newRow.appendChild(quantityCell);
         orderedItemsTableBody.appendChild(newRow);
+        recal(); 
     });
 
     // Friends Ticket
@@ -27,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
         newRow.appendChild(descriptionCell);
         newRow.appendChild(quantityCell);
         orderedItemsTableBody.appendChild(newRow);
+        recal(); 
     });
 
     // Concessions Ticket
@@ -42,6 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
         newRow.appendChild(descriptionCell);
         newRow.appendChild(quantityCell);
         orderedItemsTableBody.appendChild(newRow);
+        recal(); 
     });
 
     // Hot Dogs & Fries Ticket
@@ -57,6 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
         newRow.appendChild(descriptionCell);
         newRow.appendChild(quantityCell);
         orderedItemsTableBody.appendChild(newRow);
+        recal(); 
     });
 
     // Big Gulp Ticket
@@ -72,6 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
         newRow.appendChild(descriptionCell);
         newRow.appendChild(quantityCell);
         orderedItemsTableBody.appendChild(newRow);
+        recal();
     });
 
     // Family Hotel
@@ -87,6 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
         newRow.appendChild(descriptionCell);
         newRow.appendChild(quantityCell);
         orderedItemsTableBody.appendChild(newRow);
+        recal(); 
     });
 
     // Twin Beds Hotel
@@ -102,6 +108,7 @@ document.addEventListener("DOMContentLoaded", function () {
         newRow.appendChild(descriptionCell);
         newRow.appendChild(quantityCell);
         orderedItemsTableBody.appendChild(newRow);
+        recal(); 
     });
 
     // Super Suit Hotel
@@ -117,10 +124,11 @@ document.addEventListener("DOMContentLoaded", function () {
         newRow.appendChild(descriptionCell);
         newRow.appendChild(quantityCell);
         orderedItemsTableBody.appendChild(newRow);
+        recal(); 
     });
     //Mickys Room
-    var superSuitHotelAddButton = document.querySelector('#MikeysHotelAdd');
-    superSuitHotelAddButton.addEventListener("click", function () {
+    var mickeysRoomAddButton = document.querySelector('#MikeysHotelAdd');
+    mickeysRoomAddButton.addEventListener("click", function () {
         var quantityInput = document.querySelector('#mickeysRoom');
         var orderedItemsTableBody = document.querySelector('#orderTable tbody');
         var newRow = document.createElement('tr');
@@ -131,5 +139,35 @@ document.addEventListener("DOMContentLoaded", function () {
         newRow.appendChild(descriptionCell);
         newRow.appendChild(quantityCell);
         orderedItemsTableBody.appendChild(newRow);
+        recal(); 
     });
+
+    var undoButton = document.getElementById("undoButton");
+    undoButton.addEventListener("click", function () {
+        var orderedItemsTableBody = document.querySelector('#orderTable tbody');
+        var lastRow = orderedItemsTableBody.lastElementChild;
+        if (lastRow) {
+            orderedItemsTableBody.removeChild(lastRow);
+            recal(); 
+        }
+    });
+
+    function recal() {
+        var orderedItemsTableBody = document.querySelector('#orderTable tbody');
+        var totalQuantity = 0;
+        var rows = orderedItemsTableBody.querySelectorAll('tr');
+        rows.forEach(function (row) {
+            var quantityCell = row.querySelector('td:last-child');
+            if (quantityCell) {
+                totalQuantity += parseInt(quantityCell.textContent);
+            }
+        });
+        var totalCell = document.getElementById('total');
+        totalCell.textContent = totalQuantity;
+    }
+
+     var currentTime = new Date();     
+
+     var timeTag = document.getElementById("time");
+     timeTag.innerText = currentTime.toString();
 });

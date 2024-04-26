@@ -22,6 +22,7 @@
                 <div class="menuContent">
                     <div class="formDisplay">
                         <label for="familyTicket">
+                            <p>Family Ticket</p>
                             <img src="../image/ticket-2.jpeg" alt="Family">
                         </label>
                         <input type="number" id="familyTicket" name="ticketType1" value="0">
@@ -30,6 +31,7 @@
                     <br>
                     <div class="formDisplay">
                         <label for="friendsTicket">
+                            <p>Friends Ticket</p>
                             <img src="../image/ticket-3.jpeg" alt="Friends">
                         </label>
                         <input type="number" id="friendsTicket" name="ticketType2" value="0">
@@ -38,6 +40,7 @@
                     <br>
                     <div class="formDisplay">
                         <label for="concessionsTicket">
+                            <p>Concessions</p>                            
                             <img src="../image/ticket-1.jpeg" alt="Concessions">
                         </label>
                         <input type="number" id="concessionsTicket" name="ticketType3" value="0">
@@ -51,18 +54,20 @@
                 <div class="menuContent">
                     <div class="formDisplay">
                         <label for="hotDogsTicket">
+                            <p>Hot Dogs</p>
                             <img src="../image/dining-1.jpeg" alt="Hot Dogs and Fries">
                         </label>
                         <input type="number" id="hotDogsTicket" name="ticketType4" value="0">
                         <input type="button" value="Add" id="HotDogsFriesAdd">
-                        <br>
-                        <div class="formDisplay">
-                            <label for="bigGulpTicket">
-                                <img src="../image/dining-2.jpeg" alt="Big Gulp">
-                            </label>
-                            <input type="number" id="bigGulpTicket" name="ticketType5" value="0">
-                            <input type="button" value="Add" id="BigGulpAdd">
-                        </div>
+                    </div>
+                    <br>
+                    <div class="formDisplay">
+                        <label for="bigGulpTicket">
+                            <p>Big Gulp</p>
+                            <img src="../image/dining-2.jpeg" alt="Big Gulp">
+                        </label>
+                        <input type="number" id="bigGulpTicket" name="ticketType5" value="0">
+                        <input type="button" value="Add" id="BigGulpAdd">
                         <br>
                     </div>
                 </div>
@@ -72,6 +77,7 @@
                 <div class="menuContent">
                     <div class="formDisplay">
                         <label for="FamilyHotel">
+                            <p>Family Room</p>
                             <img src="../image/hotel-4.jpeg" alt="Family Hotel">
                         </label>
                         <input type="number" id="FamilyHotel" name="ticketType6" value="0">
@@ -79,6 +85,7 @@
                         <br>
                         <div class="formDisplay">
                             <label for="TwinBedsHotel">
+                                <p>Twin Bed Room</p>
                                 <img src="../image/hotel-1.jpeg" alt="Twin Bed Room">
                             </label>
                             <input type="number" id="TwinBedsHotel" name="ticketType7" value="0">
@@ -88,6 +95,7 @@
                     <br>
                     <div class="formDisplay">
                         <label for="SuperSuitHotel">
+                            <p>Super Suit</p>
                             <img src="../image/hotel-3.jpeg" alt="Super Suit Room">
                         </label>
                         <input type="number" id="SuperSuitHotel" name="ticketType8" value="0">
@@ -96,6 +104,7 @@
                     <br>
                     <div class="formDisplay">
                         <label for="mickeysRoom">
+                            <p>Mickeys Rooms</p>
                             <img src="../image/hotel-4.jpeg" alt="Mickeys Room">
                         </label>
                         <input type="number" id="mickeysRoom" name="ticketType9" value="0">
@@ -106,7 +115,7 @@
         </div>
         <div id="orderTable">
             <h3>Ordered Items</h3>
-            <h4>2/3/14</h4>
+            <h4 id="time"></h4>
             <p>Guest Name: Euan</p>
             <table>
                 <thead>
@@ -116,13 +125,15 @@
                     </tr>
                 </thead>
                 <tbody>
+                </tbody>
+                <tfoot>
                     <tr>
                         <td>Total</td>
-                        <td>PLACE 0</td>
+                        <td id="total"></td>
                     </tr>
-                </tbody>
+                </tfoot>
             </table>
-            <a href="../html/form-script.html">Undo</a>
+            <input type="button" value="Undo" id="undoButton">
         </div>
     </div>
     <div></div>
