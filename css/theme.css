@@ -47,7 +47,6 @@ footer{
 
 #fBox{
     display: flex;
-    width: 100%;
     border: 5px black solid;
 }
 #fBox div {
@@ -136,7 +135,7 @@ footer{
     list-style-type: none;
 }
 
-.videoCircle {
+#videoCircle {
     border: 5px solid black;
     border-radius: 50%;
     object-fit: cover;

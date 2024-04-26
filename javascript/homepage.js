@@ -23,4 +23,24 @@ function changeMsg() {
     msg.innerText = currMsg;
 }
 
+const videos = [
+    "https://personal.cs.cityu.edu.hk/~cs2204/video/Castle.mp4",
+    "https://personal.cs.cityu.edu.hk/~cs2204/video/Musical_Journey.mp4"
+];
+
+let vidIndex = 0;
+
+function switchVideo() {
+    vidIndex = (vidIndex + 1) % videos.length;
+    const videoPlayer = document.getElementById('videoCircle');
+    videoPlayer.src = videos[vidIndex];
+    videoPlayer.play();
+}
+
+//Functional calls
 setInterval(changeMsg, 3000);
+// Wait for the DOM content to be loaded
+document.addEventListener('DOMContentLoaded', function () {
+    // Event listener to switch videos when the current one ends
+    document.getElementById('videoCircle').addEventListener('ended', switchVideo);
+});
